@@ -14,10 +14,14 @@ public class Product {
 		this.brand = brand;
 		this.price = price;
 	}
-	
-	public int price() {
+	public int getPrice() {
 		return price;
 	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
 
 	public int taxprice() {
 	
@@ -29,6 +33,20 @@ public class Product {
 	    return String.format("%05d", code);
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
 	
 	
 	public String toString(){
@@ -37,4 +55,6 @@ public class Product {
 				+"\nprezzo(al pubblico): " + taxprice() + "€" + "\nEan:"+ getRandomNumberString();
 		
 }
+
+	
 }
