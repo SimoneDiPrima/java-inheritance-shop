@@ -8,11 +8,13 @@ public class Product {
 	private String brand;
 	private int price;
 	
-	public Product(String name,String brand,int price){
+	
+	public Product( String name,String brand,int price){
 		
 		this.name = name;
 		this.brand = brand;
 		this.price = price;
+		
 	}
 	public int getPrice() {
 		return price;
@@ -47,7 +49,7 @@ public class Product {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	
+
 	
 	public String toString(){
 
@@ -55,6 +57,7 @@ public class Product {
 				+"\nprezzo(al pubblico): " + taxprice() + "€" + "\nEan:"+ getRandomNumberString();
 		
 }
+	
 
 	
 }
